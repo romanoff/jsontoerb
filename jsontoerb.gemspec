@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "bin/jsontoerb",
+    "jsontoerb.gemspec",
     "lib/jsontoerb.rb",
     "lib/jsontoerb/cli.rb",
     "spec/jsontoerb_spec.rb",
