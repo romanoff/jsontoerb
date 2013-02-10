@@ -14,4 +14,9 @@ describe "Jsontoerb" do
     JsonToErb.render_template(template, "{\"name\": \"Name\"}", {"cssClass" => "a"}).should == "<div class='a'>Name</div>"      
   end
 
+  it "should be compressed with htmlcompressor" do
+    template = "<div ><%= params['name'] %></div>  <div></div>"
+    JsonToErb.render_template(template, "{\"name\": \"Name\"}").should == "<div>Name</div><div></div>"
+  end
+
 end
